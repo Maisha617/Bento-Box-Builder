@@ -1,0 +1,405 @@
+/* Make footer stick to bottom on short pages */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+    background-color: #fff7f0;
+    color: #333;
+}
+
+/* GLOBAL STYLING */
+
+h1, h2, h3 {
+    text-align: center;
+    color: #ff6f8a;
+    letter-spacing: 0.5px;
+}
+
+/* Center content containers */
+.container {
+    width: 80%; 
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #ffe3ec;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(255, 182, 193, 0.4);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background: #ffb6c1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    transition: 0.25s ease;
+    box-shadow: 0 3px 6px rgba(255, 182, 193, 0.5);
+    letter-spacing: 0.5px;
+}
+
+nav ul li a:hover {
+    background: #ff8fa3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(255, 182, 193, 0.6);
+}
+
+/* HOMEPAGE BENTO BOX */
+
+.bento-box {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.bento-box img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.45);
+    margin-bottom: 20px;
+}
+
+.bento-box h1 {
+    font-size: 32px;
+    color: #ff6f8a;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #555;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+}
+
+.bento-box p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* FORM DEFAULT STYLING */
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+}
+
+label {
+    font-weight: bold;
+    color: #ff6f8a;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #ffc4d6;
+    background: #fff0f5;
+}
+
+button, .btn {
+    background: #ff8fa3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+button:hover, .btn:hover {
+    background: #ff6f8a;
+    transform: translateY(-2px);
+}
+
+/* HOMEPAGE ACTION BUTTON */
+
+.home-buttons {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.home-buttons .btn {
+    text-decoration: none;
+    background: #ffb6c1;
+    padding: 14px 32px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    transition: 0.25s ease;
+    box-shadow: 0 3px 6px rgba(255, 182, 193, 0.5);
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.home-buttons .btn:hover {
+    background: #ff8fa3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(255, 182, 193, 0.6);
+}
+
+/* SAVED BOXES PAGE */
+
+.saved-container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.saved-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+    text-align: center;
+}
+
+.saved-box h3 {
+    color: #ff6f8a;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #777;
+}
+
+/* CHEF'S RECOMMENDATION BUTTON */
+
+.chef-btn {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 25px;
+    background: #ff8fa3;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+    transition: 0.25s ease;
+}
+
+.chef-btn:hover {
+    background: #ff6f8a;
+    transform: translateY(-2px);
+}
+
+/* BUILD PAGE SPLIT LAYOUT */
+.builder-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 140px;
+    width: 95%;
+    margin: 60px auto 40px;
+}
+
+.bento-preview {
+    width: 550px;
+    height: 420px;
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.bento-base {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.main-slot {
+    position: absolute;
+    width: 35%;
+    top: 24%;
+    left: 22%;
+}
+
+.side-slot {
+    position: absolute;
+    width: 21%;
+    top: 44%;
+    right: 24%;
+}
+
+.drink-slot {
+    position: absolute;
+    width: 40%;
+    top: -10%;
+    right: -10%;
+}
+
+.sauce-slot {
+    position: absolute;
+    width: 20%;
+    top: 26%;
+    right: 19%;
+}
+
+.builder-form {
+    width: 32%;
+}
+
+.builder-form form {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* MINI PREVIEW IN SAVED BOXES */
+.saved-bento-preview {
+    width: 230px;
+    height: 155px;
+    position: relative;
+    margin: 0 auto 15px;
+    cursor: pointer;
+}
+
+.saved-base {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* scaled-down slots */
+.saved-main {
+    position: absolute;
+    width: 27%;
+    top: 25%;
+    left: 28%;
+}
+
+.saved-side {
+    position: absolute;
+    width: 16%;
+    top: 45%;
+    right: 28%;
+}
+
+.saved-drink {
+    position: absolute;
+    width: 25%;
+    top: 1%;
+    right: -2%;
+}
+
+.saved-sauce {
+    position: absolute;
+    width: 14%;
+    top: 30%;
+    right: 23%;
+}
+
+/* MODAL */
+.bento-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.bento-modal-content {
+    width: 650px;
+    height: 500px;
+    position: relative;
+}
+
+.bento-modal-content img {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* FORCE MODAL TO USE ITS OWN POSITIONS */
+.modal-main-slot {
+    position: absolute !important;
+    width: 34% !important;
+    top: -5% !important;
+    left: 24% !important;
+}
+
+.modal-side-slot {
+    position: absolute !important;
+    width: 21% !important;
+    top: 8% !important;
+    right: 24% !important;
+}
+
+.modal-drink-slot {
+    position: absolute !important;
+    width: 45% !important;
+    top: -10% !important;
+    right: -25% !important;
+}
+
+.modal-sauce-slot {
+    position: absolute !important;
+    width: 20% !important;
+    top: -11% !important;
+    right: 19% !important;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe3ec;
+    border-top: 2px solid #ffb6c1;
+    font-size: 14px;
+    color: #555;
+    margin-top: auto;
+}
