@@ -32,6 +32,8 @@ A fully interactive web application that lets users create accounts and sign in 
   1. Visit https://www.apachefriends.org/download.html in web browser to download XAMPP
   2. Clone this repository
   3. Place the cloned repository folder inside the XAMPP htdocs folder
-  4. Open XAMPP control panel and start Apache and MySQL
-  5. Import database.sql file into phpMyAdmin by visiting localhost/phpmyadmin in web browser
-  6. Visit http://localhost/INFO152Project_mr3798/index.php in web browser to run the site
+  4. Open XAMPP control panel and start Apache + MySQL
+  5. Open phpMyAdmin by visiting localhost/phpmyadmin in web browser
+  6. Create a new database "bento_box"
+  7. Import the database.sql file 
+  8. Visit http://localhost/INFO152Project_mr3798/index.php in web browser to run the site
